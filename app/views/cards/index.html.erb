@@ -1,0 +1,276 @@
+<h1>San Guo Sha Cards</h1>
+<%= link_to 'Add New Card', new_card_path %>
+<h2>Wu Heroes</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @wu_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 0 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Wei Heroes</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @wei_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Shu Heroes</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @shu_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2> God Heroes</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @god_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Gray Heroes</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @gray_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Other Heroes</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @other_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Basic Cards</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @basic_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Scroll Cards</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @scroll_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Time-Delay Scroll Cards</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @timedelay_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Weapons</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @weapon_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Armour</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @armour_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Horses</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @horse_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<h2>Special Equipment</h2>
+<table>
+	<% index = 1 %>
+	<tr>
+	<% @special_cards.each do |card| %>
+         	<td>
+               		<a href=<%= card_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		</a>
+      		</td>		
+		<% if(index == Card::WIDTH) %>
+			</tr>
+			<tr>		
+			<% index = 1 %>
+
+		<% end %>
+
+		<% index += 1%>
+	<% end %>
+	</tr>
+</table>
+<%= link_to 'Add New Card', new_card_path %>

@@ -1,0 +1,50 @@
+I, [2016-01-22T12:10:47.008323 #42883]  INFO -- : Refreshing Gem list
+I, [2016-01-22T12:10:49.049685 #42883]  INFO -- : listening on addr=/Users/jianweisun/sanguosha/shared/sockets/unicorn.sock fd=10
+I, [2016-01-22T12:10:49.049866 #42883]  INFO -- : worker=0 spawning...
+I, [2016-01-22T12:10:49.052347 #42883]  INFO -- : worker=1 spawning...
+I, [2016-01-22T12:10:49.053453 #42883]  INFO -- : worker=2 spawning...
+I, [2016-01-22T12:10:49.054201 #42885]  INFO -- : worker=0 spawned pid=42885
+I, [2016-01-22T12:10:49.054476 #42883]  INFO -- : master process ready
+I, [2016-01-22T12:10:49.055052 #42885]  INFO -- : worker=0 ready
+I, [2016-01-22T12:10:49.055691 #42886]  INFO -- : worker=1 spawned pid=42886
+I, [2016-01-22T12:10:49.056271 #42886]  INFO -- : worker=1 ready
+I, [2016-01-22T12:10:49.056867 #42887]  INFO -- : worker=2 spawned pid=42887
+I, [2016-01-22T12:10:49.057638 #42887]  INFO -- : worker=2 ready
+I, [2016-01-22T12:11:33.348240 #42883]  INFO -- : reaped #<Process::Status: pid 42887 exit 0> worker=2
+I, [2016-01-22T12:11:33.348361 #42883]  INFO -- : reaped #<Process::Status: pid 42886 exit 0> worker=1
+I, [2016-01-22T12:11:33.348528 #42883]  INFO -- : reaped #<Process::Status: pid 42885 exit 0> worker=0
+I, [2016-01-22T12:11:33.348645 #42883]  INFO -- : master complete
+I, [2016-01-22T12:11:41.834289 #42903]  INFO -- : Refreshing Gem list
+I, [2016-01-22T12:11:43.568182 #42903]  INFO -- : unlinking existing socket=/Users/jianweisun/sanguosha/shared/sockets/unicorn.sock
+I, [2016-01-22T12:11:43.568493 #42903]  INFO -- : listening on addr=/Users/jianweisun/sanguosha/shared/sockets/unicorn.sock fd=10
+I, [2016-01-22T12:11:43.568604 #42903]  INFO -- : worker=0 spawning...
+I, [2016-01-22T12:11:43.570934 #42903]  INFO -- : worker=1 spawning...
+I, [2016-01-22T12:11:43.572132 #42903]  INFO -- : worker=2 spawning...
+I, [2016-01-22T12:11:43.572807 #42904]  INFO -- : worker=0 spawned pid=42904
+I, [2016-01-22T12:11:43.573155 #42903]  INFO -- : master process ready
+I, [2016-01-22T12:11:43.573647 #42904]  INFO -- : worker=0 ready
+I, [2016-01-22T12:11:43.574421 #42905]  INFO -- : worker=1 spawned pid=42905
+I, [2016-01-22T12:11:43.575233 #42905]  INFO -- : worker=1 ready
+I, [2016-01-22T12:11:43.575984 #42906]  INFO -- : worker=2 spawned pid=42906
+I, [2016-01-22T12:11:43.576633 #42906]  INFO -- : worker=2 ready
+I, [2016-01-22T12:12:12.943611 #42903]  INFO -- : reaped #<Process::Status: pid 42906 exit 0> worker=2
+I, [2016-01-22T12:12:12.943732 #42903]  INFO -- : reaped #<Process::Status: pid 42905 exit 0> worker=1
+I, [2016-01-22T12:12:12.943809 #42903]  INFO -- : reaped #<Process::Status: pid 42904 exit 0> worker=0
+I, [2016-01-22T12:12:12.944266 #42903]  INFO -- : master complete
+I, [2016-01-22T12:12:18.951108 #42909]  INFO -- : Refreshing Gem list
+I, [2016-01-22T12:12:20.684181 #42909]  INFO -- : unlinking existing socket=/Users/jianweisun/sanguosha/shared/sockets/unicorn.sock
+I, [2016-01-22T12:12:20.684516 #42909]  INFO -- : listening on addr=/Users/jianweisun/sanguosha/shared/sockets/unicorn.sock fd=10
+I, [2016-01-22T12:12:20.684630 #42909]  INFO -- : worker=0 spawning...
+I, [2016-01-22T12:12:20.686697 #42909]  INFO -- : worker=1 spawning...
+I, [2016-01-22T12:12:20.687886 #42909]  INFO -- : worker=2 spawning...
+I, [2016-01-22T12:12:20.689938 #42909]  INFO -- : master process ready
+I, [2016-01-22T12:12:20.688548 #42910]  INFO -- : worker=0 spawned pid=42910
+I, [2016-01-22T12:12:20.690314 #42910]  INFO -- : worker=0 ready
+I, [2016-01-22T12:12:20.691010 #42911]  INFO -- : worker=1 spawned pid=42911
+I, [2016-01-22T12:12:20.691585 #42911]  INFO -- : worker=1 ready
+I, [2016-01-22T12:12:20.691740 #42912]  INFO -- : worker=2 spawned pid=42912
+I, [2016-01-22T12:12:20.692202 #42912]  INFO -- : worker=2 ready
+I, [2016-01-22T12:12:37.561573 #42909]  INFO -- : reaped #<Process::Status: pid 42912 exit 0> worker=2
+I, [2016-01-22T12:12:37.561698 #42909]  INFO -- : reaped #<Process::Status: pid 42911 exit 0> worker=1
+I, [2016-01-22T12:12:37.561749 #42909]  INFO -- : reaped #<Process::Status: pid 42910 exit 0> worker=0
+I, [2016-01-22T12:12:37.563027 #42909]  INFO -- : master complete

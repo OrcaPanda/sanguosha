@@ -1,0 +1,4 @@
+<h1>Edit Card</h1>
+<%= render 'form' %>
+<%= link_to 'Delete', card_path(@card), method: :delete, data: {confirm: 'Are you sure you want to delete this card?'} %>
+<%= link_to 'Go Back', cards_path %>
