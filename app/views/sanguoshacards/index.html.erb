@@ -1,13 +1,13 @@
-<h1>San Guo Sha Cards</h1>
-<%= link_to 'Add New Card', new_card_path %>
+<%= render 'banner' %>
+<%= link_to 'Add New Card', new_sanguoshacard_path %>
 <h2>Wu Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
 	<% @wu_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -27,8 +27,8 @@
 	<tr>
 	<% @wei_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -48,8 +48,8 @@
 	<tr>
 	<% @shu_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -69,8 +69,8 @@
 	<tr>
 	<% @god_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -90,8 +90,8 @@
 	<tr>
 	<% @gray_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -111,8 +111,8 @@
 	<tr>
 	<% @other_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -132,8 +132,8 @@
 	<tr>
 	<% @basic_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -153,8 +153,8 @@
 	<tr>
 	<% @scroll_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -174,8 +174,8 @@
 	<tr>
 	<% @timedelay_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -195,8 +195,8 @@
 	<tr>
 	<% @weapon_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -216,8 +216,8 @@
 	<tr>
 	<% @armour_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -237,8 +237,8 @@
 	<tr>
 	<% @horse_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -258,8 +258,8 @@
 	<tr>
 	<% @special_cards.each do |card| %>
          	<td>
-               		<a href=<%= card_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), card_path(card) %>
+               		<a href=<%= sanguoshacard_path(card) %> >
+                       		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
       		</td>		
 		<% if(index == Card::WIDTH) %>
@@ -273,4 +273,4 @@
 	<% end %>
 	</tr>
 </table>
-<%= link_to 'Add New Card', new_card_path %>
+<%= link_to 'Add New Card', new_sanguoshacard_path %>

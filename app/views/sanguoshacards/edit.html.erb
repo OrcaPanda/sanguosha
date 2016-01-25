@@ -1,0 +1,5 @@
+<%= render 'banner' %>
+<h1>Edit Card for San Guo Sha</h1>
+<%= render 'formedit' %>
+<%= link_to 'Delete', sanguoshacard_path(@sanguoshacard), method: :delete, data: {confirm: 'Are you sure you want to delete this card?'} %>
+<%= link_to 'Go Back', sanguoshacard_path(@sanguoshacard) %>

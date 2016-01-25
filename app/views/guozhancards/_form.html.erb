@@ -1,0 +1,50 @@
+<%= form_for @guozhancard, :url => url_for(:controller => 'guozhancards', :action => 'create') do |c| %>
+	<% if @guozhancard.errors.any? %>
+		<div>
+			<h2>
+				<%= pluralize(@guozhancard.errors.count, "error") %> prevented this card from being saved: 
+			</h2>
+			<ul>
+				<% @guozhancard.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<p>
+		<%= c.label :name %><br>
+		<%= c.text_field :name %>
+	</p>
+
+	<%= c.hidden_field :gamemode, :value => 'guozhan' %>
+
+	<p>
+		<%= c.label :cardtype %><br>
+		<%= c.collection_select :cardtype, Card::TYPES, :to_s, :to_s, :include_blank => true %>
+	</p>
+
+	<p>
+		<%= c.label :blood %><br>
+		<%= c.collection_select :blood, Card::BLOOD, :to_f, :to_f, :include_blank => true %>
+	</p>
+	
+	<p>			
+		<%= c.label :explanation %><br>
+		<%= c.text_field :explanation %>
+	</p>
+
+	<p>
+		Image: (Supported formats: <em>jpeg, gif, png</em>, recommended dimensions: 1113x1600)<br>
+		<%= c.file_field :image %>
+	</p>
+
+	<p>
+                Secondary Image (Not Required): (Supported formats: <em>jpeg, gif, png</em>, recommended dimensions: 1113x1600)<br>
+                <%= c.file_field :secondaryimage %>
+        </p
+
+	<p>
+		<%= c.submit %>
+	</p>
+<% end %>

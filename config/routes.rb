@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-	resources :cards
-	root to: 'cards#index'
-
+	resources :sanguoshacards
+	resources :guozhancards
+	root to: 'sanguoshacards#index'
 
 
 
