@@ -1,5 +1,7 @@
+<body class="guozhan_body">
 <%= render 'banner' %>
 <h1>Edit Card for Guo Zhan</h1>
 <%= render 'formedit' %>
 <%= link_to 'Delete', guozhancard_path(@guozhancard), method: :delete, data: {confirm: 'Are you sure you want to delete this card?'} %>
 <%= link_to 'Go Back', guozhancard_path(@guozhancard) %>
+</body>

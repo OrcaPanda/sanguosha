@@ -1,14 +1,45 @@
+<%= stylesheet_link_tag "banner.css" %>
+<% if false %>
 <table>
         <tr>
-                <td>
-                        <a href=<%= sanguoshacards_path%>>
-                                <h1>San Guo Sha Cards</h1>
+               
+               	<div class="banner_sanguosha">
+			<th>
+		    	 <a href=<%= sanguoshacards_path%>>
+                               <p>San Guo Sha Cards</p>
                         </a>
-                </td>
-                <td>
+			</th>
+		</div>
+                
+                
+		<div class="banner_guozhan">
+			<th>
                         <a href=<%= guozhancards_path%>
-                                <h1>Guo Zhan Cards</h1>
+                                <p>Guo Zhan Cards</p>
                         </a>
-                </td>
+			</th>
+		</div>
+                
         </tr>
 </table>
+<% end %>
+<div class="table_div">
+<table>
+<tr>
+	<th>
+		<a href=<%= sanguoshacards_path%>>
+			<div class="banner_sanguosha">
+				<span class="banner_text">San Guo Sha</span>			
+			</div>
+		</a>
+	</th>
+	<th>
+		<a href=<%= guozhancards_path%>>
+			<div class="banner_guozhan">
+				<span class="banner_text">Guo Zhan</span>
+			</div>
+		</a>
+	</th>
+</tr>
+</table>
+</div>

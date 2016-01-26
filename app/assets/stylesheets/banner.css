@@ -1,0 +1,34 @@
+.banner_sanguosha {
+	height: 75px;
+	width: 350px;
+	color: blue;
+	background-color: #00873f;
+	vertical-align: middle;
+	text-decoration: none;
+}
+.banner_guozhan {
+	height: 75px;
+	width: 350px;
+	background-color: #73150b;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.table_div {
+	left: 0;
+	right: 0;
+	padding-bottom: 0px;
+	background-color: #000000;
+}
+
+.banner_text {
+	text-decoration: inherit;
+}
+
+.guozhan_body {
+	background-color: #73150b;
+}
+
+.sanguosha_body {
+	background-color: #00873f;
+}
