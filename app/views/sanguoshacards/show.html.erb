@@ -7,9 +7,7 @@
 	<%= image_tag(@sanguoshacard.secondaryimage.url, width: "300", height: "431") %>
 <% end %>
 <h2>Explanation and Usage</h2>
-	<p>
-		<%= @sanguoshacard.explanation %>
-	</p>
+		<%= simple_format(@sanguoshacard.explanation) %>
 <%= link_to 'Edit', edit_sanguoshacard_path(@sanguoshacard) %>
 <%= link_to 'Add New Card', new_sanguoshacard_path %>
 <%= link_to 'Go Back', sanguoshacards_path %>

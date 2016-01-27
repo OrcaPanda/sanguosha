@@ -8,7 +8,7 @@
 <% end %>
 <h2>Explanation and Usage</h2>
 	<p>
-		<%= @guozhancard.explanation %>
+		<%= simple_format(@guozhancard.explanation) %>
 	</p>
 <%= link_to 'Edit', edit_guozhancard_path(@guozhancard) %>
 <%= link_to 'Add New Card', new_guozhancard_path %>

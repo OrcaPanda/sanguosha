@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "banner.css" %>
 <%= form_for @sanguoshacard, :url => url_for(:controller => 'sanguoshacards', :action => 'create') do |c| %>
 	<% if @sanguoshacard.errors.any? %>
 		<div>
@@ -31,7 +32,7 @@
 	
 	<p>			
 		<%= c.label :explanation %><br>
-		<%= c.text_field :explanation %>
+		<%= c.text_area(:explanation, size: "50x10") %>
 	</p>
 
 	<p>

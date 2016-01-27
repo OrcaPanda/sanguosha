@@ -1,7 +1,7 @@
 .banner_sanguosha {
 	height: 75px;
 	width: 350px;
-	color: blue;
+	color: white;
 	background-color: #00873f;
 	vertical-align: middle;
 	text-decoration: none;
@@ -9,6 +9,7 @@
 .banner_guozhan {
 	height: 75px;
 	width: 350px;
+	color: white;
 	background-color: #73150b;
 	vertical-align: middle;
 	text-decoration: none;
@@ -32,3 +33,4 @@
 .sanguosha_body {
 	background-color: #00873f;
 }
+
