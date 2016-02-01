@@ -9,13 +9,13 @@ class Card < ActiveRecord::Base
 		:convert_options => {
 			:index_thumb => "-quality 75 -strip"}
 	has_attached_file :secondaryimage
-	validates :name, presence: true, uniqueness: {case_sensitive: false}
+	validates :name, presence: true
 	validates :cardtype, presence: true
 	validates :explanation, presence: true
 	validates :blood, presence: true
 	validates_attachment :image, content_type: { content_type: ["image/jpeg", "image/gif", "image/png"]}
 	validates_attachment :secondaryimage, content_type: { content_type: ["image/jpeg", "image/gif", "image/png"]}
-	TYPES = ['Wu Hero','Shu Hero','Wei Hero','Gray Hero','God Hero','Other Hero','Basic Card','Scroll Card','Time-Delay Scroll Card','Weapon','Armour','Horse','Special Equipment']
+	TYPES = ['Wu Hero','Shu Hero','Wei Hero','Gray Hero','God Hero','Other Hero','Basic Card','Tool Card','Time-Delay Tool Card','Weapon','Armour','Horse','Treasure']
 	BLOOD = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0]
 	WIDTH = 4 #4 cards wide per row
 

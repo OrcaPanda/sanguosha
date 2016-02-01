@@ -64,11 +64,11 @@
 	<% end %>
 	</tr>
 </table>
-<h2> God Heroes</h2>
+<h2>Qun Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
-	<% @god_cards.each do |card| %>
+	<% @gray_cards.each do |card| %>
          	<td>
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
@@ -85,11 +85,11 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Gray Heroes</h2>
+<h2> God Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
-	<% @gray_cards.each do |card| %>
+	<% @god_cards.each do |card| %>
          	<td>
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
@@ -148,11 +148,11 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Scroll Cards</h2>
+<h2>Tool Cards</h2>
 <table>
 	<% index = 1 %>
 	<tr>
-	<% @scroll_cards.each do |card| %>
+	<% @tool_cards.each do |card| %>
          	<td>
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
@@ -169,7 +169,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Time-Delay Scroll Cards</h2>
+<h2>Time-Delay Tool Cards</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -253,11 +253,11 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Special Equipment</h2>
+<h2>Treasure</h2>
 <table>
 	<% index = 1 %>
 	<tr>
-	<% @special_cards.each do |card| %>
+	<% @treasure_cards.each do |card| %>
          	<td>
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>

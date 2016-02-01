@@ -8,12 +8,15 @@ class GuozhancardsController < ApplicationController
                 @god_cards = Card.where("cardtype = ? AND gamemode = ?","God Hero","guozhan").order("blood ASC")
                 @other_cards = Card.where("cardtype = ? AND gamemode = ?","Other Hero","guozhan").order("blood ASC")
                 @basic_cards = Card.where("cardtype = ? AND gamemode = ?","Basic Card","guozhan").order("blood ASC")
-                @scroll_cards = Card.where("cardtype = ? AND gamemode = ?","Scroll Card","guozhan").order("blood ASC")
-                @timedelay_cards = Card.where("cardtype = ? AND gamemode = ?","Time-Delay Scroll Card","guozhan").order("blood ASC")
+                @tool_cards = Card.where("cardtype = ? AND gamemode = ?","Tool Card","guozhan").order("blood ASC")
+                @timedelay_cards = Card.where("cardtype = ? AND gamemode = ?","Time-Delay Tool Card","guozhan").order("blood ASC")
                 @weapon_cards = Card.where("cardtype = ? AND gamemode = ?","Weapon","guozhan").order("blood ASC")
                 @armour_cards = Card.where("cardtype = ? AND gamemode = ?","Armour","guozhan").order("blood ASC")
                 @horse_cards = Card.where("cardtype = ? AND gamemode = ?","Horse","guozhan").order("blood ASC")
-                @special_cards = Card.where("cardtype = ? AND gamemode = ?","Special Equipment","guozhan").order("blood ASC")
+                @treasure_cards = Card.where("cardtype = ? AND gamemode = ?","Treasure","guozhan").order("blood ASC")
+                @unsorted_cards = Card.where("cardtype = ? AND gamemode = ?","Scroll Card","guozhan").order("blood ASC")
+                @unsorted1_cards = Card.where("cardtype = ? AND gamemode = ?","Time-Delay Scroll Card","guozhan").order("blood ASC")
+                @unsorted2_cards = Card.where("cardtype = ? AND gamemode = ?","Special Equipment","guozhan").order("blood ASC")
         end
 
         def show

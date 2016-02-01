@@ -8,12 +8,12 @@ class SanguoshacardsController < ApplicationController
                 @god_cards = Card.where("cardtype = ? AND gamemode = ?","God Hero","sanguosha").order("blood ASC")
                 @other_cards = Card.where("cardtype = ? AND gamemode = ?","Other Hero","sanguosha").order("blood ASC")
                 @basic_cards = Card.where("cardtype = ? AND gamemode = ?","Basic Card","sanguosha").order("blood ASC")
-                @scroll_cards = Card.where("cardtype = ? AND gamemode = ?","Scroll Card","sanguosha").order("blood ASC")
-                @timedelay_cards = Card.where("cardtype = ? AND gamemode = ?","Time-Delay Scroll Card","sanguosha").order("blood ASC")
+                @tool_cards = Card.where("cardtype = ? AND gamemode = ?","Tool Card","sanguosha").order("blood ASC")
+                @timedelay_cards = Card.where("cardtype = ? AND gamemode = ?","Time-Delay Tool Card","sanguosha").order("blood ASC")
                 @weapon_cards = Card.where("cardtype = ? AND gamemode = ?","Weapon","sanguosha").order("blood ASC")
                 @armour_cards = Card.where("cardtype = ? AND gamemode = ?","Armour","sanguosha").order("blood ASC")
                 @horse_cards = Card.where("cardtype = ? AND gamemode = ?","Horse","sanguosha").order("blood ASC")
-                @special_cards = Card.where("cardtype = ? AND gamemode = ?","Special Equipment","sanguosha").order("blood ASC")
+                @treasure_cards = Card.where("cardtype = ? AND gamemode = ?","Treasure","sanguosha").order("blood ASC")
         end
 
 	def show
