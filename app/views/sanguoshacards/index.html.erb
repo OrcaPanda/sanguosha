@@ -68,7 +68,7 @@
 <table>
 	<% index = 1 %>
 	<tr>
-	<% @gray_cards.each do |card| %>
+	<% @qun_cards.each do |card| %>
          	<td>
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>

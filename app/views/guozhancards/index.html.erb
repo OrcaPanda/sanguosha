@@ -68,7 +68,7 @@
 <table>
 	<% index = 1 %>
 	<tr>
-	<% @gray_cards.each do |card| %>
+	<% @qun_cards.each do |card| %>
          	<td>
                		<a href=<%= guozhancard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), guozhancard_path(card) %>
@@ -276,67 +276,3 @@
 </table>
 <%= link_to 'Add New Card', new_guozhancard_path %>
 </body>
-<h2>Unsorted Cards</h2>
-<table>
-	<% index = 1 %>
-	<tr>
-	<% @unsorted_cards.each do |card| %>
-         	<td>
-               		<a href=<%= guozhancard_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), guozhancard_path(card) %>
-               		</a>
-      		</td>		
-		<% if(index == Card::WIDTH) %>
-			</tr>
-			<tr>		
-			<% index = 0 %>
-
-		<% end %>
-
-		<% index += 1%>
-	<% end %>
-	</tr>
-</table>
-<h2>More Unsorted Cards</h2>
-<table>
-	<% index = 1 %>
-	<tr>
-	<% @unsorted1_cards.each do |card| %>
-         	<td>
-               		<a href=<%= guozhancard_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), guozhancard_path(card) %>
-               		</a>
-      		</td>		
-		<% if(index == Card::WIDTH) %>
-			</tr>
-			<tr>		
-			<% index = 0 %>
-
-		<% end %>
-
-		<% index += 1%>
-	<% end %>
-	</tr>
-</table>
-<h2>More Unsorted Cards</h2>
-<table>
-	<% index = 1 %>
-	<tr>
-	<% @unsorted2_cards.each do |card| %>
-         	<td>
-               		<a href=<%= guozhancard_path(card) %> >
-                       		<%= link_to image_tag(card.image.url(:index_thumb)), guozhancard_path(card) %>
-               		</a>
-      		</td>		
-		<% if(index == Card::WIDTH) %>
-			</tr>
-			<tr>		
-			<% index = 0 %>
-
-		<% end %>
-
-		<% index += 1%>
-	<% end %>
-	</tr>
-</table>
-

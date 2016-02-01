@@ -4,7 +4,7 @@ class SanguoshacardsController < ApplicationController
                 @wu_cards = Card.where("cardtype = ? AND gamemode = ?","Wu Hero","sanguosha").order("blood ASC")
                 @shu_cards = Card.where("cardtype = ? AND gamemode = ?","Shu Hero","sanguosha").order("blood ASC")
                 @wei_cards = Card.where("cardtype = ? AND gamemode = ?","Wei Hero","sanguosha").order("blood ASC")
-                @gray_cards = Card.where("cardtype = ? AND gamemode = ?","Gray Hero","sanguosha").order("blood ASC")
+                @qun_cards = Card.where("cardtype = ? AND gamemode = ?","Qun Hero","sanguosha").order("blood ASC")
                 @god_cards = Card.where("cardtype = ? AND gamemode = ?","God Hero","sanguosha").order("blood ASC")
                 @other_cards = Card.where("cardtype = ? AND gamemode = ?","Other Hero","sanguosha").order("blood ASC")
                 @basic_cards = Card.where("cardtype = ? AND gamemode = ?","Basic Card","sanguosha").order("blood ASC")
