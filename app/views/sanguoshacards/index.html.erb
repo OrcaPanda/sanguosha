@@ -1,7 +1,7 @@
 <body class="sanguosha_body">
 <%= render 'banner' %>
 <%= link_to 'Add New Card', new_sanguoshacard_path %>
-<h2>Wu Heroes</h2>
+<h2>吴将 Wu Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -10,10 +10,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -22,7 +22,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Wei Heroes</h2>
+<h2>魏将 Wei Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -31,10 +31,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -43,7 +43,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Shu Heroes</h2>
+<h2>蜀将 Shu Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -52,10 +52,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -64,7 +64,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Qun Heroes</h2>
+<h2>群雄 Qun Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -73,10 +73,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -85,7 +85,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2> God Heroes</h2>
+<h2>神将 God Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -94,10 +94,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -106,7 +106,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Other Heroes</h2>
+<h2>其他武将 Other Heroes</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -115,10 +115,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -127,7 +127,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Basic Cards</h2>
+<h2>基本牌 Basic Cards</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -136,10 +136,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -148,7 +148,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Tool Cards</h2>
+<h2>锦囊牌 Tool Cards</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -157,10 +157,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -169,7 +169,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Time-Delay Tool Cards</h2>
+<h2>延时锦囊牌 Time-Delay Tool Cards</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -178,10 +178,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -190,7 +190,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Weapons</h2>
+<h2>武器 Weapons</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -199,10 +199,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -211,7 +211,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Armour</h2>
+<h2>防具 Armour</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -220,10 +220,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -232,7 +232,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Horses</h2>
+<h2>马 Horses</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -241,10 +241,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
@@ -253,7 +253,7 @@
 	<% end %>
 	</tr>
 </table>
-<h2>Treasure</h2>
+<h2>宝物 Treasure</h2>
 <table>
 	<% index = 1 %>
 	<tr>
@@ -262,10 +262,10 @@
                		<a href=<%= sanguoshacard_path(card) %> >
                        		<%= link_to image_tag(card.image.url(:index_thumb)), sanguoshacard_path(card) %>
                		</a>
-      		</td>		
+      		</td>
 		<% if(index == Card::WIDTH) %>
 			</tr>
-			<tr>		
+			<tr>
 			<% index = 0 %>
 
 		<% end %>
