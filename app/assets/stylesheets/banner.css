@@ -2,7 +2,7 @@
 	height: 75px;
 	width: 350px;
 	color: white;
-	background-color: #00873f;
+	background-color: #bfd8e0;
 	vertical-align: middle;
 	text-decoration: none;
 }
@@ -10,7 +10,7 @@
 	height: 75px;
 	width: 350px;
 	color: white;
-	background-color: #d5b69a;
+	background-color: #accfa8;
 	vertical-align: middle;
 	text-decoration: none;
 }
@@ -27,10 +27,10 @@
 }
 
 .guozhan_body {
-	background-color: #d5b69a;
+	background-color: #accfa8;
 }
 
 .sanguosha_body {
-	background-color: #00873f;
+	background-color: #bfd8e0;
 }
 
